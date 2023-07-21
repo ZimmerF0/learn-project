@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+span {
+  width: 100%;
+}
+
 
 .app {
   font-family: 'Open Sans', sans-serif;
@@ -62,16 +66,27 @@ li>a {
 
 }
 
-.item {
-  display: flex;
-  justify-content: space-between;
+li.item {
+width: 97%;
   margin-top: 15px;
   list-style: none;
   cursor: pointer;
   background: white;
   border-radius: 10px;
-  padding: 10px;
   border-bottom: 2px solid #586958;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+
+.item-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .btn {
@@ -109,5 +124,5 @@ li>a {
   width: 20px;
   height: 20px;
   margin-right: 10px;
-  margin-top: 8px;
+  margin-top: 11px;
 }
