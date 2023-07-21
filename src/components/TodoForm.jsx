@@ -19,7 +19,7 @@ const TodoForm = ({ todo }) => {
   };
 
   return (
-    <div >
+    <div>
       <h1 className="title">My Todo List</h1>
       <div className="input-text">
         <input
@@ -31,13 +31,12 @@ const TodoForm = ({ todo }) => {
         <button
           className="btn"
           onClick={() => addTodoHandler()}
-          // disabled={input.length < 1}
+          disabled={todoValue.length < 1}
         >
           Add
         </button>
       </div>
       <hr />
-      
     </div>
   );
 };
