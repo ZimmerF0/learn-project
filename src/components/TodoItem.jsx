@@ -19,7 +19,7 @@ const TodoItem = ({ todo }) => {
       <ul>
         <li className="item">
           <input
-            onClick={() => toggleTodoHandler(todo.id)}
+            onChange={() => toggleTodoHandler(todo.id)}
             className="checkbox"
             type="checkbox"
           />
