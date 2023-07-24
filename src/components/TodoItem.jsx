@@ -6,7 +6,7 @@ import {
   deleteTodo,
   editTodo,
 } from "../features/todo/todoSlice";
-// import { updateCompletedTodos } from "../features/todo/todoListSlice";
+import { updateCompletedTodos } from "../features/todo/todoListSlice";
 
 import TimeModal from "./TimeModal";
 
@@ -17,12 +17,12 @@ const TodoItem = ({ todo }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [time, setTime] = useState("");
 
-  // const toggleTodoHandler = id => {
-  //   dispatch(toggleCompletedTodo(id));
-  // };
   const toggleTodoHandler = (id) => {
     dispatch(toggleCompletedTodo({ id }));
     handleOpenModal();
+
+    
+    dispatch(updateCompletedTodos());
   };
 
   const removeTodoHandler = id => {
