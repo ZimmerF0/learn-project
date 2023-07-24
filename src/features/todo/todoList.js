@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+// import { toggleCompletedTodo } from "./todoSlice";
 
 const initialState = {
   completedTodos: [],
@@ -16,3 +17,9 @@ export const todoListSlice = createSlice({
 
 export const { setCompletedTodos } = todoListSlice.actions;
 export default todoListSlice.reducer;
+
+export const updateCompletedTodos = () => (dispatch, getState) => {
+  const { todos } = getState();
+  const completedTodos = todos.filter((todo) => todo.completed);
+  dispatch(setCompletedTodos(completedTodos));
+};
