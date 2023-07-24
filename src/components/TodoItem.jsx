@@ -33,7 +33,9 @@ const TodoItem = ({ todo }) => {
   };
 
   const handleOpenModal = () => {
-    setIsModalOpen(true);
+    if (!todo.completed) {
+      setIsModalOpen(true);
+    }
   };
 
   const handleCloseModal = () => {
@@ -50,10 +52,12 @@ const TodoItem = ({ todo }) => {
       <ul>
         <li className="item">
           <input
-            onChange={() => toggleTodoHandler(todo.id)}
+            onChange={() => {
+              toggleTodoHandler(todo.id);
+              handleOpenModal();
+            }}
             className="checkbox"
             type="checkbox"
-            onClick={() => handleOpenModal()}
           />
 
           {isEditing ? (
