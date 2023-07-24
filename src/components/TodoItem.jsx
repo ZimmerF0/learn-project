@@ -5,6 +5,7 @@ import {
   toggleCompletedTodo,
   deleteTodo,
   editTodo,
+  updateTime,
 } from "../features/todo/todoSlice";
 import { updateCompletedTodos } from "../features/todo/todoListSlice";
 
@@ -17,11 +18,10 @@ const TodoItem = ({ todo }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [time, setTime] = useState("");
 
-  const toggleTodoHandler = (id) => {
+  const toggleTodoHandler = id => {
     dispatch(toggleCompletedTodo({ id }));
     handleOpenModal();
 
-    
     dispatch(updateCompletedTodos());
   };
 
@@ -50,6 +50,7 @@ const TodoItem = ({ todo }) => {
 
   const handleSaveTime = time => {
     setTime(time);
+    dispatch(updateTime({ id: todo.id, time: time }));
     handleCloseModal();
   };
 
@@ -57,7 +58,7 @@ const TodoItem = ({ todo }) => {
     <div>
       <ul>
         <li className="item">
-        {!todo.completed && (
+          {!todo.completed && (
             <input
               onChange={() => {
                 toggleTodoHandler(todo.id);
@@ -118,7 +119,6 @@ const TodoItem = ({ todo }) => {
         onClose={handleCloseModal}
         onSave={handleSaveTime}
       />
-      <div>Time: {time}</div>
     </div>
   );
 };
