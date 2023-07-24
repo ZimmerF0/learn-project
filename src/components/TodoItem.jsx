@@ -51,14 +51,16 @@ const TodoItem = ({ todo }) => {
     <div>
       <ul>
         <li className="item">
-          <input
-            onChange={() => {
-              toggleTodoHandler(todo.id);
-              handleOpenModal();
-            }}
-            className="checkbox"
-            type="checkbox"
-          />
+        {!todo.completed && (
+            <input
+              onChange={() => {
+                toggleTodoHandler(todo.id);
+                handleOpenModal();
+              }}
+              className="checkbox"
+              type="checkbox"
+            />
+          )}
 
           {isEditing ? (
             <div className="item-box">
