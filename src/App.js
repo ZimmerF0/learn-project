@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { fetchCompletedTodos } from "./utils/api"; // Укажите правильный путь к файлу api.js
+import { fetchCompletedTodos } from "./utils/api"; 
 import { setCompletedTodos } from "./features/todo/todoListSlice";
 import TodoList from "./components/TodoList";
 import Progress from "./components/Progress";

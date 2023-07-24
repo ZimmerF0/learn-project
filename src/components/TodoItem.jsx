@@ -118,6 +118,7 @@ const TodoItem = ({ todo }) => {
         onClose={handleCloseModal}
         onSave={handleSaveTime}
       />
+      <div>Time: {time}</div>
     </div>
   );
 };
