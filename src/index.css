@@ -55,8 +55,9 @@ input {
 
 
 li {
-  color: brown;
-  font-size: 18px;
+  color: rgb(25, 11, 11);
+  font-size: 20px;
+  list-style: none;
 }
 
 li>a {
@@ -69,11 +70,10 @@ li>a {
 li.item {
   width: 97%;
   margin-top: 15px;
-  list-style: none;
-  cursor: pointer;
   background: white;
   border-radius: 10px;
   border-bottom: 2px solid #586958;
+  text-decoration: none;
 }
 
 .item {

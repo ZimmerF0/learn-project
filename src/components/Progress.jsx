@@ -13,7 +13,7 @@ const Progress = () => {
       <div>
         <ul>
           {completedTodos.map(todo => (
-            <li key={todo.id}>
+            <li key={todo.id} className="item-complete">
               <CompletedTodoItem todo={todo} />
             </li>
           ))}
