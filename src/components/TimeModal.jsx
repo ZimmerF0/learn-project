@@ -18,7 +18,6 @@ const TimeModal = ({ isOpen, onClose, onSave }) => {
   return (
     <div className={`modal ${isOpen ? "open" : ""}`}>
       <div className="modal-content">
-        <span className="close" onClick={onClose}></span>
         <h3 className="modal-title">Enter the execution time</h3>
         <input
           type="number"
