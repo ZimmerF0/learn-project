@@ -4,6 +4,8 @@ import { useDispatch } from "react-redux";
 import { addTodo } from "../features/todo/todoSlice";
 import { v4 } from "uuid";
 
+import "../styles/TodoForm.css"
+
 const TodoForm = ({ todo }) => {
   const dispatch = useDispatch();
   const [todoValue, setTodoValue] = useState("");

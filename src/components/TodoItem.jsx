@@ -9,6 +9,8 @@ import {
 } from "../features/todo/todoSlice";
 import { updateCompletedTodos } from "../features/todo/todoListSlice";
 
+import "../styles/TodoItem.css";
+
 import TimeModal from "./TimeModal";
 
 const TodoItem = ({ todo }) => {

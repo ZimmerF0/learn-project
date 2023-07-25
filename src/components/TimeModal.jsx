@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './TimeModal.css';
+import '../styles/TimeModal.css';
 
 const TimeModal = ({ isOpen, onClose, onSave }) => {
   const [time, setTime] = useState('');

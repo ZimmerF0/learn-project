@@ -1,0 +1,64 @@
+li.item {
+  width: 97%;
+  margin-top: 15px;
+  background: white;
+  border-radius: 10px;
+  border-bottom: 2px solid #586958;
+  text-decoration: none;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 11px;
+}
+
+.item-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+
+.complete-item {
+  padding: 10px;
+  width: 97%;
+  margin-top: 15px;
+  list-style: none;
+  cursor: pointer;
+  background: white;
+  border-radius: 10px;
+  border-bottom: 2px solid #586958;
+}
+
+.complete-input-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.success-btn,
+.edit-btn,
+.del-btn {
+  font-size: 20px;
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.all-btn {
+  display: flex;
+
+}
+
+.completed {
+  text-decoration: line-through;
+  color: green;
+}

@@ -9,7 +9,6 @@ span {
   width: 100%;
 }
 
-
 .app {
   font-family: 'Open Sans', sans-serif;
   background: rgb(227, 224, 209);
@@ -21,7 +20,6 @@ span {
   align-items: center;
 }
 
-
 .main {
   width: 600px;
   margin: 50px auto;
@@ -29,18 +27,6 @@ span {
   border-radius: 20px;
   padding: 20px 50px;
 
-}
-
-.title {
-  font-size: 35px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.input-text {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
 }
 
 input {
@@ -53,7 +39,6 @@ input {
   font-size: 16px;
 }
 
-
 li {
   color: rgb(25, 11, 11);
   font-size: 20px;
@@ -64,83 +49,6 @@ li>a {
   text-decoration: none;
   color: brown;
   margin-left: 30px;
-
-}
-
-li.item {
-  width: 97%;
-  margin-top: 15px;
-  background: white;
-  border-radius: 10px;
-  border-bottom: 2px solid #586958;
-  text-decoration: none;
-}
-
-.item {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 10px;
-}
-
-.complete-item {
-  padding: 10px;
-  width: 97%;
-  margin-top: 15px;
-  list-style: none;
-  cursor: pointer;
-  background: white;
-  border-radius: 10px;
-  border-bottom: 2px solid #586958;
-}
-
-.complete-input-item {
-  display: flex;
-  justify-content: space-between;
-}
-
-.item-box {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.btn {
-  width: 60px;
-  background-color: rgb(129, 30, 51);
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-  border: none;
-  border-radius: 10px;
-  margin-left: 5px;
-}
-
-.success-btn,
-.edit-btn,
-.del-btn {
-  font-size: 20px;
-  margin-left: 10px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.all-btn {
-  display: flex;
-
-}
-
-.completed {
-  text-decoration: line-through;
-  color: green;
-}
-
-.checkbox {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  margin-top: 11px;
 }
 
 .total-info {
