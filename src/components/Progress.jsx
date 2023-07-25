@@ -29,7 +29,7 @@ const Progress = () => {
           ))}
         </ul>
       </div>
-      <div>
+      <div className="total-info">
         <p>Total completed tasks: {totalCompletedTodos}</p>
         <p>Total time: {formattedTotalTime}</p>
       </div>
